@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,12 +22,12 @@
     }
 
     .picked {
-        background: green;
+        background: blue;
     }
     </style>
 </head>
 
-<body>
+<body style='background-color:gray'>
     <select id="mySelect" onchange="classChange()">
         <option value="block1">Block 1
         <option value="block5">Block 5
@@ -153,6 +154,7 @@
     }
     let updateButton = document.getElementById("updateButton");
     updateButton.addEventListener("click", updateList);
+    setInterval(updateList,5000);
     </script>
 </body>
 
